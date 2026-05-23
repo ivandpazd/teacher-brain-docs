@@ -22,7 +22,7 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: '22' }
       - run: npm ci
-      - run: npx markdownlint-cli2 "**/*.md" "#node_modules"
+      - run: npx markdownlint-cli2 "**/*.md" "#node_modules" "#.vitepress"
 
   build:
     needs: lint
