@@ -4,6 +4,35 @@ Teacher Brain aplica una estrategia de **defensa en profundidad** documentada en
 
 ## Capas de seguridad
 
+```mermaid
+graph TD
+    subgraph "Capa 1 — Perímetro"
+        TLS[HTTPS/TLS]
+        CSP[Content-Security-Policy]
+        RateLimit[Rate Limiting]
+    end
+    subgraph "Capa 2 — Autenticación"
+        JWT[JWT httpOnly]
+        TFA[2FA TOTP]
+        Sessions[Dashboard sesiones]
+    end
+    subgraph "Capa 3 — Datos"
+        Transit[Encriptación tránsito]
+        Rest[Encriptación reposo]
+        Backup[Backup cifrado]
+    end
+    subgraph "Capa 4 — Auditoría"
+        Logs[Logs acceso]
+        DepScan[Escaneo dependencias]
+    end
+    subgraph "Capa 5 — Respuesta"
+        IR[Plan incidentes]
+        Pentest[Penetration testing]
+        GDPR[Auditoría GDPR]
+    end
+    TLS --> JWT --> Rest --> Logs --> IR
+```
+
 ### Perímetro
 - HTTPS/TLS en producción
 - CSP configurada vía Helmet

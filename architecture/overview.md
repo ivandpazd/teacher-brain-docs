@@ -46,8 +46,19 @@ Gestión de prácticas en empresa: placements, visitas del tutor, evaluación fi
 
 ## Cadena de propiedad de datos
 
-```
-User → TeacherProfile → TeacherWorkspace → { AcademicYear, TeachingGroup, SubjectModule, Student, ... }
+```mermaid
+graph TD
+    User[User] -->|1:1| Profile[TeacherProfile]
+    Profile -->|1:N| Workspace[TeacherWorkspace]
+    Workspace -->|1:N| AY[AcademicYear]
+    Workspace -->|1:N| Group[TeachingGroup]
+    Workspace -->|1:N| Module[SubjectModule]
+    Group -->|1:N| Student[Student]
+    Group -->|1:N| Assignment[TeachingAssignment]
+    Module -->|1:N| Assignment
+    Student -->|1:N| Grade[ModuleFinalGrade]
+    Student -->|1:N| Tutoring[TutoringSession]
+    Student -->|1:N| Attendance[AttendanceRecord]
 ```
 
 Toda entidad docente está atada a un `TeacherWorkspace`. El backend filtra siempre por workspace del usuario autenticado.
