@@ -1,0 +1,26 @@
+{
+  "name": "teacher-brain-docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivandpazd/teacher-brain-docs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ivandpazd/teacher-brain-docs/issues"
+  },
+  "homepage": "https://github.com/ivandpazd/teacher-brain-docs#readme",
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}
