@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/ivandpazd/teacher-brain-docs#readme",
   "devDependencies": {
+    "markdownlint-cli2": "^0.22.1",
     "vitepress": "^1.6.4"
   }
 }

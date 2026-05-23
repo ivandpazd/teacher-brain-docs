@@ -37,7 +37,6 @@ export default defineConfig({
         { text: 'Diseño', items: [
           { text: 'Contrato visual público', link: '/design/public-contract' },
           { text: 'Design system', link: '/design/design-system' },
-          { text: 'Componentes compartidos', link: '/design/components' },
         ]},
       ],
       '/guides/': [
@@ -53,13 +52,12 @@ export default defineConfig({
         { text: 'Privacidad', items: [
           { text: 'Visión general', link: '/privacy/overview' },
           { text: 'Retención de datos', link: '/privacy/retention-policy' },
-          { text: 'Seguridad', link: '/privacy/security' },
+          { text: 'Seguridad', link: '/architecture/security' },
         ]},
       ],
       '/api/': [
         { text: 'API', items: [
           { text: 'Visión general', link: '/api/overview' },
-          { text: 'Autenticación', link: '/api/auth' },
         ]},
       ],
     },
