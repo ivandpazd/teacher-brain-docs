@@ -2,7 +2,7 @@
 
 **Versión**: 1.0  
 **Fecha**: 2026-05-23  
-**ADR vinculado**: [`0032-technical-debt-and-architecture-roadmap.md`](../adr/0032-technical-debt-and-architecture-roadmap.md)
+**ADR vinculado**: [`0032-technical-debt-and-architecture-roadmap.md`](https://github.com/ivandpazd/teacher-brain/blob/main/docs/adr/0032-technical-debt-and-architecture-roadmap.md)
 
 ## Resumen ejecutivo
 
@@ -459,4 +459,4 @@ MVP18 y MVP19 pueden ejecutarse en paralelo con MVP16 y MVP17 porque tocan área
 ---
 
 **Documento generado**: 2026-05-23  
-**ADR vinculado**: [`0032-technical-debt-and-architecture-roadmap.md`](../adr/0032-technical-debt-and-architecture-roadmap.md)
+**ADR vinculado**: [`0032-technical-debt-and-architecture-roadmap.md`](https://github.com/ivandpazd/teacher-brain/blob/main/docs/adr/0032-technical-debt-and-architecture-roadmap.md)
